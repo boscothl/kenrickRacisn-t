@@ -3,13 +3,6 @@
   "name": "Chess.com Piece Redirector",
   "version": "1.0",
   "description": "Redirect chess.com piece image requests to a custom server (for custom piece images).",
-  "permissions": ["declarativeNetRequest"],
-  "host_permissions": [
-    "https://images.chesscomfiles.com/*",
-    "https://chess.com/*",
-    "http://swhl.ddns.net:8080/*",
-    "https://swhl.ddns.net:8080/*"
-  ],
   "declarative_net_request": {
     "rule_resources": [
       {
@@ -18,5 +11,11 @@
         "path": "rules.json"
       }
     ]
-  }
+  },
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": [
+    "https://images.chesscomfiles.com/*",
+    "https://www.chess.com/*",
+    "https://raw.githubusercontent.com/*"
+  ]
 }

@@ -5,11 +5,11 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "regexSubstitution": "http://swhl.ddns.net:8080/$1"
+        "regexSubstitution": "https://raw.githubusercontent.com/boscothl/kenrickRacisn-t/main/img/\\1"
       }
     },
     "condition": {
-      "regexFilter": "^https://images\\.chesscomfiles\\.com/chess-themes/pieces/.*/([^/?]+\\.png)(?:\\?.*)?$",
+      "regexFilter": "^https://images\\.chesscomfiles\\.com/chess-themes/pieces/.*/(.*\\.png)$",
       "resourceTypes": ["image"]
     }
   }
