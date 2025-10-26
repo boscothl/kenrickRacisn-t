@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "http://swhl.ddns.net:8080/$1"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https://images\\.chesscomfiles\\.com/chess-themes/pieces/.*/([^/?]+\\.png)(?:\\?.*)?$",
+      "resourceTypes": ["image"]
+    }
+  }
+]
